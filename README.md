@@ -35,3 +35,9 @@ sudo apt-get install python3-picamera
 sudo pip3 install --upgrade picamera[array]
 sudo pip3 install dlib face_recognition
 ```
+
+### Setup PyAudio and Speech Recognition
+```
+sudo apt-get install python-pyaudio python3-pyaudio libpulse-dev
+sudo pip3 install PocketSphinx pyaudio
+```
