@@ -12,5 +12,26 @@ A python and raspberry pi powered robot with inspiration from Rick and Morty.
 
 ## Setup
 
-* [Install and setup dlib + face_detection](https://gist.github.com/ageitgey/1ac8dbe8572f3f533df6269dab35df65)
-* Install and setup the 2-Mics Pi Hat
+### Setup initial
+```  
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install -y build-essential cmake git wget curl python3-dev python3-numpy python3-pip zip
+sudo apt-get clean
+```
+
+### Setup SeedStudio Pi Hat
+``` 
+git clone https://github.com/respeaker/seeed-voicecard.git
+cd seeed-voicecard
+sudo ./install.sh
+reboot
+```
+
+### Setup dlib and Raspberry Pi Camera
+[Install and setup dlib + face_detection](https://gist.github.com/ageitgey/1ac8dbe8572f3f533df6269dab35df65)
+```
+sudo apt-get install python3-picamera
+sudo pip3 install --upgrade picamera[array]
+sudo pip3 install dlib face_recognition
+```
