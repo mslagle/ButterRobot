@@ -38,6 +38,6 @@ sudo pip3 install dlib face_recognition
 
 ### Setup PyAudio and Speech Recognition
 ```
-sudo apt-get install python-pyaudio python3-pyaudio libpulse-dev
+sudo apt-get install python-pyaudio python3-pyaudio libpulse-dev libasound2-dev
 sudo pip3 install PocketSphinx pyaudio
 ```
